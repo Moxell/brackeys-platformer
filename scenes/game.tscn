@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://dy4r3nfdlwie0"]
+[gd_scene load_steps=14 format=4 uid="uid://dy4r3nfdlwie0"]
 
 [ext_resource type="PackedScene" uid="uid://ne81qpsmjit1" path="res://scenes/player.tscn" id="1_ifo2p"]
 [ext_resource type="Texture2D" uid="uid://du17cxrg2nwq7" path="res://assets/sprites/world_tileset.png" id="2_4dli2"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://45v88so3pyaf" path="res://scenes/coin.tscn" id="4_nfgf6"]
 [ext_resource type="PackedScene" uid="uid://dj7ajmrfa01ef" path="res://scenes/killzone.tscn" id="5_g0s6k"]
 [ext_resource type="PackedScene" uid="uid://cbrl3qmolhami" path="res://scripts/slime.tscn" id="6_e3bim"]
+[ext_resource type="FontFile" uid="uid://dwvlvg6k657i2" path="res://assets/fonts/PixelOperator8.ttf" id="7_638qo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pbrdd"]
 texture = ExtResource("2_4dli2")
@@ -300,3 +301,50 @@ autoplay = "Move"
 
 [node name="Slime" parent="." instance=ExtResource("6_e3bim")]
 position = Vector2(508, 20)
+
+[node name="Label" type="Label" parent="."]
+z_index = 1
+offset_left = -104.0
+offset_top = 26.0
+offset_right = -17.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
+theme_override_fonts/font = ExtResource("7_638qo")
+theme_override_font_sizes/font_size = 8
+text = "Space To Jump"
+
+[node name="Label2" type="Label" parent="."]
+z_index = 1
+offset_left = 105.0
+offset_top = -1.0
+offset_right = 192.0
+offset_bottom = 10.0
+theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
+theme_override_fonts/font = ExtResource("7_638qo")
+theme_override_font_sizes/font_size = 8
+text = "Pick up Coins
+"
+
+[node name="Label3" type="Label" parent="."]
+z_index = 1
+offset_left = 371.0
+offset_top = 16.0
+offset_right = 458.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
+theme_override_fonts/font = ExtResource("7_638qo")
+theme_override_font_sizes/font_size = 8
+text = "Falling Hurts
+"
+
+[node name="Label4" type="Label" parent="."]
+z_index = 1
+offset_left = 683.0
+offset_top = -91.0
+offset_right = 770.0
+offset_bottom = -80.0
+theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
+theme_override_fonts/font = ExtResource("7_638qo")
+theme_override_font_sizes/font_size = 8
+text = "Almost There
+"
